@@ -2,18 +2,92 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
-#calc_ticket,
-#ticket {
-  padding: 50px;
-  margin-bottom: 80px;
+body {
+  background-color: #b72e39;
+}
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* utilities */
+.field {
+  /* text-align: center; */
+}
+.btn {
+  margin: 0 20px;
+  background-color: grey;
+  padding: 15px;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid  #000000;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
 }
 span {
   color: red;
 }
 .hidden {
-  opacity: 0;
+  /* opacity: 0; */
+  transition: 0.6s;
 }
 .show {
   opacity: 1;
+  transition: 0.6s;
+}
+/* /utilities */
+
+/* calcolo del biglietto */
+.block-calc-ticket {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 15px 3px #000000;
+}
+.form {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.form > .field,
+.form input {
+  text-align: center;
+}
+.form h4 {
+  margin-bottom: 15px;
+  color: #af6269;
+}
+.form input,
+.form select {
+  background-color: transparent;border: 1.5px solid #b72e39;
+  border-radius: 5px;
+  height: 25px;
+  text-transform: uppercase;
+}
+.form input:focus,
+.form select:focus {
+  outline: none;
+  background-color: #af6269;
+  border-color: lightblue;
+}
+.block-button {
+  padding: 20px;
+}
+
+#calc_ticket,
+#ticket {
+  padding: 50px;
+  margin-bottom: 80px;
 }
