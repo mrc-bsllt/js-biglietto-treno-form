@@ -53,7 +53,10 @@ function() {
 bottoneAnnulla.addEventListener("click",
 function() {
 
-  // sparizione del mostraBiglietto
+  // sparizione del Biglietto e dei valori inseriti
   biglietto.className = "hidden";
+  document.getElementById("user_name").value = "";
+  document.getElementById("user_km").value = "";
+  document.getElementById("user_age").value = "";
 }
 );
