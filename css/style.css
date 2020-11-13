@@ -101,7 +101,7 @@ span {
 .block-ticket > h3 {
   text-transform: uppercase;
 }
-.ticket-info:first-child {
+.block-ticket > .ticket-info:first-child {
   background-color: grey;
 }
 .ticket-info {
