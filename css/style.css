@@ -47,7 +47,7 @@ span {
   color: red;
 }
 .hidden {
-  /* opacity: 0; */
+  opacity: 0;
   transition: 0.6s;
 }
 .show {
@@ -101,7 +101,7 @@ span {
 .block-ticket > h3 {
   text-transform: uppercase;
 }
-.block-ticket > .ticket-info:first-child {
+.ticket-info:nth-child(2) {
   background-color: grey;
 }
 .ticket-info {
