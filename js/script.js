@@ -58,5 +58,10 @@ function() {
   document.getElementById("user_name").value = "";
   document.getElementById("user_km").value = "";
   document.getElementById("user_age").value = "";
+  document.getElementById("name_value").innerHTML = "";
+  document.getElementById("offer").innerHTML = "";
+  document.getElementById("carriage_number").innerHTML = "";
+  document.getElementById("cp_number").innerHTML = "";
+  document.getElementById("ticket_price").innerHTML = "";
 }
 );
