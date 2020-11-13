@@ -1,5 +1,10 @@
 var bottoneGenera = document.getElementById("active_button");
+var bottoneAnnulla = document.getElementById("cancel_button");
+var biglietto = document.getElementById("ticket");
+
+// bottone genera
 bottoneGenera.addEventListener("click",
+
 
 function() {
 
@@ -39,8 +44,16 @@ function() {
   document.getElementById("cp_number").innerHTML = numeroCp;
 
   // apparizione sezione ticket
-  var mostraBiglietto = document.getElementById("ticket");
-  mostraBiglietto.className = "show";
+  biglietto.className = "show";
 
+}
+);
+
+// bottone Annulla
+bottoneAnnulla.addEventListener("click",
+function() {
+
+  // sparizione del mostraBiglietto
+  biglietto.className = "hidden";
 }
 );
