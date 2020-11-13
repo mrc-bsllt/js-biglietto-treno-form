@@ -13,12 +13,21 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
 }
-
+#calc_ticket,
+#ticket {
+  padding: 50px;
+  margin-bottom: 80px;
+}
+.block-calc-ticket,
+.block-ticket {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
 /* utilities */
-.field {
-  /* text-align: center; */
-}
 .btn {
   margin: 0 20px;
   background-color: grey;
@@ -49,11 +58,7 @@ span {
 
 /* calcolo del biglietto */
 .block-calc-ticket {
-  width: 60%;
-  margin: auto;
-  padding: 20px;
   border-radius: 20px;
-  background-color: #ffffff;
   box-shadow: 5px 5px 15px 3px #000000;
 }
 .form {
@@ -85,9 +90,21 @@ span {
 .block-button {
   padding: 20px;
 }
+/* /calcolo del biglietto */
 
-#calc_ticket,
-#ticket {
-  padding: 50px;
-  margin-bottom: 80px;
+/* il tuo biglietto */
+.block-ticket::after {
+  content: "";
+  display: table;
+  clear: both;
 }
+.block-ticket > h3 {
+  text-transform: uppercase;
+}
+.ticket-info {
+  float: left;
+  width: calc(100% / 5);
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+/* /il tuo biglietto */
