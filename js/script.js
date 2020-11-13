@@ -16,10 +16,13 @@ function() {
 
   if (etaUtente == "Minorenne") {
     prezzoFinale = prezzoMinorenniBiglietto.toFixed(2);
+    document.getElementById("offer").innerHTML = "Sconto del 20%";
   } else if (etaUtente == "Over 65") {
     prezzoFinale = prezzoOverBiglietto.toFixed(2);
+    document.getElementById("offer").innerHTML = "Sconto del 40%";
   } else {
     prezzoFinale = prezzoStandardBiglietto.toFixed(2);
+    document.getElementById("offer").innerHTML = "Biglietto Standard";
   }
 
   document.getElementById("ticket_price").innerHTML = prezzoFinale + " €";
