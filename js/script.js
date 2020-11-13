@@ -34,11 +34,13 @@ function() {
   // numero carrozza
   var numeroCarrozza = Math.floor((Math.random() * 9 ) + 1);
   document.getElementById("carriage_number").innerHTML = numeroCarrozza;
-
   // codice CP
   var numeroCp = Math.floor((Math.random() * 10000 ) + 90000);
   document.getElementById("cp_number").innerHTML = numeroCp;
 
-}
+  // apparizione sezione ticket
+  var mostraBiglietto = document.getElementById("ticket");
+  mostraBiglietto.className = "show";
 
+}
 );
