@@ -44,7 +44,7 @@ h2 {
   outline: none;
 }
 span {
-  color: red;
+  color: #b46425;
 }
 .hidden {
   opacity: 0;
@@ -101,13 +101,17 @@ span {
 .block-ticket > h3 {
   text-transform: uppercase;
 }
-.ticket-info:nth-child(2) {
+.block-ticket > .ticket-info:first-of-type {
   background-color: grey;
 }
 .ticket-info {
   float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: calc(100% / 5);
   height: 100px;
+  padding: 7px;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
 }
